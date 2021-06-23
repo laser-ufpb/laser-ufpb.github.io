@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#03A9F4;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#3A3735;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M45.8,47H18.2c-1.4,0-2.5-1.1-2.5-2.5v-25c0-1.4,1.1-2.5,2.5-2.5h27.5c1.4,0,2.5,1.1,2.5,2.5v25
+			C48.2,45.9,47.1,47,45.8,47z"/>
+	</g>
+	<g>
+		<path class="st1" d="M43,19H21c-1.7,0-3,1.3-3,3v20c0,1.7,1.3,3,3,3h22c1.7,0,3-1.3,3-3V22C46,20.3,44.7,19,43,19z M44,22v5h-3v-2
+			h-4v-4h2v2h2v-2h2C43.6,21,44,21.4,44,22z M41,33h3v2h-3V33z M41,31v-2h3v2H41z M31,39v4h-2v-4H31z M33,39h2v4h-2V39z M25,37V27
+			h14v10H25z M33,25v-4h2v4H33z M31,25h-2v-4h2V25z M21,21h2v2h2v-2h2v4h-4v2h-3v-5C20,21.4,20.4,21,21,21z M23,35h-3v-2h3V35z
+			 M23,31h-3v-2h3V31z M20,42v-5h3v2h4v4h-2v-2h-2v2h-2C20.4,43,20,42.6,20,42z M43,43h-2v-2h-2v2h-2v-4h4v-2h3v5
+			C44,42.6,43.6,43,43,43z"/>
+		<path class="st1" d="M27,35h10v-6H27V35z M29,31h6v2h-6V31z"/>
+	</g>
+	<g>
+		<rect x="33" y="48" class="st2" width="2" height="12"/>
+	</g>
+	<g>
+		<rect x="33" y="62" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<rect x="29" y="48" class="st2" width="2" height="12"/>
+	</g>
+	<g>
+		<rect x="29" y="62" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="27,58 11,58 11,56 25,56 25,48 27,48 		"/>
+	</g>
+	<g>
+		<rect x="7" y="56" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="23,54 5,54 5,52 21,52 21,48 23,48 		"/>
+	</g>
+	<g>
+		<rect x="1" y="52" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="53,58 37,58 37,48 39,48 39,56 53,56 		"/>
+	</g>
+	<g>
+		<rect x="55" y="56" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="59,54 41,54 41,48 43,48 43,52 59,52 		"/>
+	</g>
+	<g>
+		<rect x="61" y="52" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<rect x="29" y="4" class="st2" width="2" height="12"/>
+	</g>
+	<g>
+		<rect x="29" y="0" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<rect x="33" y="4" class="st2" width="2" height="12"/>
+	</g>
+	<g>
+		<rect x="33" y="0" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="39,16 37,16 37,6 53,6 53,8 39,8 		"/>
+	</g>
+	<g>
+		<rect x="55" y="6" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="43,16 41,16 41,10 59,10 59,12 43,12 		"/>
+	</g>
+	<g>
+		<rect x="61" y="10" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="27,16 25,16 25,8 11,8 11,6 27,6 		"/>
+	</g>
+	<g>
+		<rect x="7" y="6" class="st0" width="2" height="2"/>
+	</g>
+	<g>
+		<polygon class="st2" points="23,16 21,16 21,12 5,12 5,10 23,10 		"/>
+	</g>
+	<g>
+		<rect x="1" y="10" class="st0" width="2" height="2"/>
+	</g>
+</g>
+</svg>

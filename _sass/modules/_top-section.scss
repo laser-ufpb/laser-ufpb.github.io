@@ -1,0 +1,23 @@
+#top-section {
+    position: relative;
+    min-height: 300px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: $base-section-background-color;
+
+    .content-wrapper{
+        padding-bottom: 0;
+    }
+    
+    .jumbotron {
+        position: relative;
+        color: #fff;
+        background: 0;
+    }
+
+    .container {
+        max-width: 1140px;
+
+        h1{font-weight: $light2; font-family: "Roboto", sans-serif;}
+    }
+}

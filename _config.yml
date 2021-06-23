@@ -1,0 +1,12 @@
+title: "LaSER"
+description: "Laboratório de Engenharia de Sistemas e Robótica"
+baseurl: ""
+url: "https://laser-ufpb.github.io/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+

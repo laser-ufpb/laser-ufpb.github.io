@@ -1,0 +1,84 @@
+- 
+    id: 1,
+    name: "Aldevison & Túlio & Wagner"
+    members: 
+        - "Aldevison, Túlio, Wagner"
+    members_short: "Aldevison, Túlio"
+- 
+    id: 2,
+    name: "Selection Sort"
+    members: 
+        - "José Victor, Mattheus C., Wellyngton"
+    members_short: "José Victor, Mattheus C., Wellyngton"
+- 
+    id: 3,
+    name: "Grupo"
+    members: 
+        - "Rennan, José Pedro, Renilton"
+    members_short: "Rennan, José Pedro, Renilton"
+- 
+    id: 4,
+    name: "Trackers"
+    members: 
+        - "Emmanuella, Luyza, Leandro"
+    members_short: "Luciana e José"
+- 
+    id: 5,
+    name: "All By Myself"
+    members: 
+        - "Wesley G."
+    members_short: "Wesley G."
+- 
+    id: 6,
+    name: "Trio sertanejo"
+    members: 
+        - "Alan, Lucas L., Carlos A."
+    members_short: "Alan, Lucas L., Carlos A."
+- 
+    id: 7,
+    name: "miNGW"
+    members: 
+        - "Nathan, Gabriel, Weslley D."
+    members_short: "Nathan, Gabriel, Weslley D."
+- 
+    id: 8,
+    name: "Carlos M."
+    members: 
+        - "Carlos M."
+    members_short: "Carlos M."
+- 
+    id: 9,
+    name: "J&T"
+    members: 
+        - "Jonas, Thiago"
+    members_short: "Jonas, Thiago"
+-  
+    id: 10,
+    name: "NA DataScience"
+    members: 
+        - "Ítalo, Elayni, Ednaldo"
+    members_short: "Ítalo, Elayni, Ednaldo"
+-  
+    id: 11,
+    name: "Capivaras do cangaço"
+    members: 
+        - "Gustavo, Luciana, Kenji"
+    members_short: "Gustavo, Luciana, Kenji"
+-  
+    id: 12,
+    name: "Ômega de 3"
+    members: 
+        - "Franklin, Matheus A., Michel"
+    members_short: "Franklin, Matheus A., Michel"
+-   
+    id: 13,
+    name: "Open"
+    members: 
+        - "Itamar, João Pedro, João Wallace"
+    members_short: "Itamar, João Pedro, João Wallace"
+-   
+    id: 14,
+    name: "Três e Trezentos"
+    members: 
+        - "Joelder, Lucas G., Yasmin"
+    members_short: "Joelder, Lucas G., Yasmin"

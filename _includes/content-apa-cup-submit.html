@@ -1,0 +1,150 @@
+<!-- Begin APA Cup Section -->
+<section id="apa-cup-submit" class="pb-0">
+	<!-- Instruções -->
+	<div class="content-wrapper pb-0 mb-5">
+			<div class="container">
+				<div class="row justify-content-center no-gutters">
+					<div class="col-10 text-center">
+						<div class="sec-title f-weight-light align-items-center">Instruções</div>
+					</div>
+				</div>
+			<div class="row no-gutters justify-content-center div-instructions">
+				<div class="col-10 text-start">
+					<p>Cada grupo pode enviar soluções por meio do formulário disponível no link abaixo. Note que, caso encontrem novas soluções ao longo do desenvolvimento do projeto, o grupo pode enviar uma nova (e melhor) solução para a atualização do ranking. O formulário irá permanecer disponível por toda a duração do projeto, sendo desabilitado somente no dia <code>15 de Julho de 2021</code>.</p>
+
+					<p>Para submeter uma solução, você deve:</p>
+					
+					<ol>
+						<li>Escolher o seu grupo</li>
+						<li>Escolher para qual instância deseja enviar uma solução</li>
+						<li>Inserir o valor da solução que deseja enviar</li>
+						<li>Informar a solução</li>
+					</ol>
+					
+					
+					<p>Note que para informar sua solução no <strong>passo 4</strong>. deve-se seguir as seguintes regras de formatação:</p>
+					
+					<ul>
+						<li>O conjunto de vértices V = {0, ..., n-1}, onde n é o número de vértices (os endereços para aplicação do questionário) na instância. Isso significa, que na sua solução o primeiro vértice deve ser designado pelo identificador 0 (sede da empresa) e o último pelo identificador n-1</li>
+						<li>A solução a ser enviada deve ser <strong>viável</strong>, ou seja, deve respeitar as retrições do problema.</li>
+						<li>Para informar uma rota que, por exemplo, parta do vértice 0, em seguida visite os vértices 1, 3, e 2 (nessa ordem), e por fim retorne ao vértice inicial 0, utilize o seguinte formato: <code>0, 1, 3, 2, 0</code>.</li>
+						<li>Para informar uma <b>solução</b> com múltiplas rotas, basta separar cada rota com o caractere <code>;</code>. Exemplo: a representação <code>0, 1, 3, 2, 0 ; 0, 4, 6, 5, 0</code> especifica uma solução com 2 rotas, onde a primeira se refere a 0->1->3->2->0 e a segunda a 0->4->6->5->0.</li>
+					</ul>
+
+					<p>Caso encontre algum problema para enviar sua solução, contate seu professor.</p>
+
+					<h5 class="d-block">Observação</h5>
+
+					<p>Caso não veja imediatamente sua solução no ranking, não se preocupe, ela passará por uma avaliação adicional antes de ser contabilizada. O ranking é atualizado, em geral, ao menos uma vez por dia.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Enviar solução -->
+	<div class="content-wrapper bg-gray pb-4">
+		<div class="container">
+			<div class="row justify-content-center no-gutters">
+				<div class="col text-center">
+					<div class="sec-title f-weight-light align-items-center">Enviar solução</div>
+				</div>
+			</div>
+			<div class="row justify-content-center no-gutters mx-auto" style="max-width: 800px;">
+				<div class="col-10 text-start">
+					<form id="form-apa-cup-submit" class="needs-validation mb-4" novalidate>
+						<div class="form-group">
+							<label for="select-name">Grupo</label>
+							<select class="form-control" id="select-group" class="custom-select" required>
+								<option value="">Escolha seu grupo</option>
+                            {% assign sorted = (site.data.apa-cup-groups-2020-2 | sort:"name") %}
+							{% for group in sorted %}
+								<option value="{{ group.id }}" data-best-sol-apa1="-1" data-best-sol-apa2="-1" data-best-sol-apa3="-1" data-name="{{ group.name }}" data-members="{% for member in group.members %}{{ member }}{% if forloop.last == false %}, {% endif %}{% endfor %}" data-members-short="{{ group.members_short }}">{{ group.name }}</option>
+							{% endfor %}
+							</select>
+							<div class="invalid-feedback">
+								Precisamos saber qual grupo está enviando a solução!
+							</div>
+						</div>
+						
+						<div class="form-group mt-3">
+							<label for="select-instance">Instância</label>
+							<select class="form-control" id="select-instance" class="custom-select" required>
+								<option value="">Escolha a instância</option>
+								<option value="1">cup1</option>
+								<option value="2">cup2</option>
+								<option value="3">cup3</option>
+							</select>
+							<div class="invalid-feedback">
+								Você precisa informar qual a instância que utilizou para gerar a solução!
+							</div>
+						</div>
+
+						<div class="form-group mt-3">
+							<label for="input-cost">Valor da solução</label>
+							<input type="number" class="form-control" id="input-cost" aria-describedby="valor" placeholder="Valor" name="cost" required>
+							<div class="invalid-feedback">
+								Informe o valor da solução que você encontrou! (Obs: Esse valor deve ser um inteiro)
+							</div>
+						</div>
+						
+						<div class="form-group mt-3">
+							<label for="textarea-solution">Solução</label>
+							<textarea class="form-control" id="textarea-solution" rows="5" required></textarea>
+							<div class="invalid-feedback">
+								Você deve informar uma solução viável!
+							</div>
+	
+							<input class="d-none" type="text" name="_gotcha">
+							<input type="hidden" name="_language" value="pt-BR" />
+						</div>
+						
+                        <div class="submit-group mt-4">
+                            <button id="btn-submit" class="btn btn-primary" type="submit" style="display: none;">Enviar!</button>
+                            <button id="btn-open-model" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-confirm">Enviar!</button>
+
+                            <button id="btn-sending" class="btn btn-primary d-none" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Enviando...
+                            </button>
+                        </div>
+					</form>
+
+					<!-- Success -->
+					<div id="alert-successfully-sent" class="alert alert-success alert-dismissible d-none" role="alert">
+						<h4 class="alert-heading">Solução enviada!</h4>
+						<p>Sua solução passará por mais uma etapa de verificação e caso tudo esteja certo a classificação será atualizada. Volte mais tarde para conferir a classificação.</p>
+						<hr>
+						<p class="mb-0">Obs: Geralmente as atualizações são feitas uma vez por dia.</p>
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+
+					<div id="container-alerts">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End apa Cup Section -->
+  
+<!-- Modal -->
+<div class="modal fade" id="modal-confirm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirmação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Parece que está tudo ok com sua solução. Tem certeza que deseja enviá-la?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="btn-submit-confirm" data-bs-dismiss="modal">Enviar!!!</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  

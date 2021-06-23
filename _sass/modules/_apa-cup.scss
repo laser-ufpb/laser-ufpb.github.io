@@ -1,0 +1,88 @@
+.icon-table{
+	color: #03A9F4;
+}
+
+#enviar-solucao{
+	height: 50px;
+	width: 200px;
+}
+
+/* ============================================
+ Ranking
+============================================*/
+#table-ranking{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 1rem;
+    
+    th{
+        font-weight: 100;
+    }
+}
+
+/* ============================================
+ Podium
+============================================*/
+#main-podium{
+    width: auto;
+
+    .podium-group{
+        position: absolute;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .podium-gold-group{
+        top: 150px;
+        left: 150px;
+    }
+    
+    .podium-silver-group{
+        top: 180px;
+        left: 35px;
+    }
+    
+    .podium-bronze-group{
+        top: 190px;
+        left: 264px;
+    }
+}
+
+
+/* ============================================
+ Submition
+============================================*/
+#apa-cup-submit{
+    .icon-table{
+        color: #03A9F4;
+    }
+
+    #btn-submit{
+        font-family: $font-regular;
+    }
+
+    #form-apa-cup-submit label{
+        font-size: 1.2rem;
+        color: #3d3d3d;
+        font-weight: 300;
+    }
+
+
+
+    #form-apa-cup-submit .invalid-feedback{
+        font-size: 1rem;
+    }
+
+    #form-apa-cup-submit button{
+        min-width: 120px;
+    }
+
+    .div-instructions p{font-size: 16px;}
+    .div-instructions ul, .div-instructions ol{font-size: 15px;}
+}
+
+#modal-confirm{
+    font-family: $font-regular;
+}
