@@ -1,7 +1,7 @@
 #num_vertices
 450
 
-#P 
+#P
 15
 
 #distances
