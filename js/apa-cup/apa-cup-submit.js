@@ -53,15 +53,10 @@ $(document).ready(function(){
             case 3:
                 instance_name = 'cup3';
                 break;
-            // --- DEBUG ONLY ---
-            case 4:
-                instance_name = 'cup4';
-                break;
-            // --- DEBUG ONLY ---
         }
 
         if(instance_name == null){
-            alertUser('Alguma coisa saiu errado! Por favor, comunique o erro ao professor informando o código de erro.', 1, 60, 10);
+            alertUser('Alguma coisa saiu errado! Por favor, comunique o erro ao professor informando o código de erro.', 1, 300, 10);
         }
         else{
             var result = validateSolution(instance_name, solution_str, solution_cost_user);
@@ -73,7 +68,7 @@ $(document).ready(function(){
                 console.log("best_sol = " + best_sol);
                 console.log("current_sol = " + result.cost_evaluated);
                 if(best_sol != -1 && best_sol <= result.cost_evaluated){
-                    alertUser('Você já enviou uma solução de valor melhor!! A solução atual tem valor <strong>' + result.cost_evaluated + '</strong> enquanto que a melhor tem valor <strong>' + best_sol + '</strong>. Sendo assim essa solução não será enviada...', 1, 30, 11);
+                    alertUser('Você já enviou uma solução de valor melhor!! A solução atual tem valor <strong>' + result.cost_evaluated + '</strong> enquanto que a melhor tem valor <strong>' + best_sol + '</strong>. Sendo assim essa solução não será enviada...', 1, 300, 11);
                 }
                 else{
                     if($('#alert-successfully-sent').hasClass('d-none')){
@@ -176,7 +171,7 @@ $(document).ready(function(){
                 solution[i][j] = parseInt(solution[i][j]);
                 
                 if(isNaN(solution[i][j])){
-                    alertUser("A solução informada não está no formato correto! Leia as instruções acima para descobrir como formatar sua solução.", 1, 30, null);
+                    alertUser("A solução informada não está no formato correto! Leia as instruções acima para descobrir como formatar sua solução.", 1, 300, null);
                     setSolutionFieldInvalid();
                     return result;
                 }
@@ -200,12 +195,12 @@ $(document).ready(function(){
         // Initial and final vertices in each route
         for(var i = 0 ; i < solution.length ; i++)
             if(solution[i][0] != solution[i][solution[i].length-1]){
-                alertUser("Rota número " + (i+1) + " inviável, o primeiro vértice deve ser igual ao último!", 1, 30, null);
+                alertUser("Rota número " + (i+1) + " inviável, o primeiro vértice deve ser igual ao último!", 1, 300, null);
                 setSolutionFieldInvalid();
                 return result;
             }
             else if(solution[i][0] != 0){
-                alertUser("Rota número " + (i+1) + " inviável, a rota deve iniciar na sede (vértice 0)!", 1, 30, null);
+                alertUser("Rota número " + (i+1) + " inviável, a rota deve iniciar na sede (vértice 0)!", 1, 300, null);
                 setSolutionFieldInvalid();
                 return result;
             }
@@ -214,7 +209,7 @@ $(document).ready(function(){
         // Check routes' length
         for(var i = 0 ; i < solution.length ; i++)
             if(solution[i].length - 2 > instance.p){
-                alertUser("Rota número " + (i+1) + " inviável, pois visita mais endereços do que o permitido! São visitados " + (solution[i].length - 2) + " enquanto que o limite é " + instance.p, 1, 30, null);
+                alertUser("Rota número " + (i+1) + " inviável, pois visita mais endereços do que o permitido! São visitados " + (solution[i].length - 2) + " enquanto que o limite é " + instance.p, 1, 300, null);
                 setSolutionFieldInvalid();
                 return result;
             }
@@ -233,7 +228,7 @@ $(document).ready(function(){
 
                 // Check if the current vertex has already been visited
                 if(is_visited[solution[k][i]]){
-                    alertUser("Solução inviável! Na rota " + (k+1) + " o cliente " + solution[k][i] + " é visitado mais de uma vez!", 1, 30, null);
+                    alertUser("Solução inviável! Na rota " + (k+1) + " o cliente " + solution[k][i] + " é visitado mais de uma vez!", 1, 300, null);
                     setSolutionFieldInvalid();
                     return result;
                 }
@@ -246,7 +241,7 @@ $(document).ready(function(){
         // Check if all clientes have been visited
         for(var k = 1 ; k < instance.num_vertices ; k++){
             if(!is_visited[k]){
-                alertUser("Solução inviável! O cliente " + k + " nunca é visitado!", 1, 30, null);
+                alertUser("Solução inviável! O cliente " + k + " nunca é visitado!", 1, 300, null);
                 setSolutionFieldInvalid();
                 return result;
             }
