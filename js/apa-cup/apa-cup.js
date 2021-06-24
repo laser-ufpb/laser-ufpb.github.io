@@ -78,9 +78,9 @@ $(document).ready(function(){
         }
 
         // Fill in the podium
-        if(main_ranking.length > 0) $('#main-podium .podium-gold-group').html(main_ranking[0].group_members_short);
-        if(main_ranking.length > 1) $('#main-podium .podium-silver-group').html(main_ranking[1].group_members_short);
-        if(main_ranking.length > 2) $('#main-podium .podium-bronze-group').html(main_ranking[2].group_members_short);
+        if(main_ranking.length > 0) $('#main-podium .podium-gold-group').html(main_ranking[0].group_name);
+        if(main_ranking.length > 1) $('#main-podium .podium-silver-group').html(main_ranking[1].group_name);
+        if(main_ranking.length > 2) $('#main-podium .podium-bronze-group').html(main_ranking[2].group_name);
     }
 
     function readsJson(){
