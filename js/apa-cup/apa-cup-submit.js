@@ -214,7 +214,7 @@ $(document).ready(function(){
         // Check routes' length
         for(var i = 0 ; i < solution.length ; i++)
             if(solution[i].length - 2 > instance.p){
-                alertUser("Rota número " + (i+1) + " inviável, pois visita mais endereços do que o permitido! São visitados " + solution[i].length - 2 + " enquanto que o limite é " + instance.p, 1, 30, null);
+                alertUser("Rota número " + (i+1) + " inviável, pois visita mais endereços do que o permitido! São visitados " + (solution[i].length - 2) + " enquanto que o limite é " + instance.p, 1, 30, null);
                 setSolutionFieldInvalid();
                 return result;
             }
